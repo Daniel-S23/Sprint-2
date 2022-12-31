@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Sprint_2</title>
+</head>
+
+<body>
+
+  <main class="container">
+    <section class="purple_background">
+      <div class="card">
+        <img class="card_logo" src="./img/card-logo.svg" alt="logo">
+        <p class="number_bar">0000 0000 0000 0000</p>
+        <div class="details">
+          <p class="name">Jane Appleseed</p>
+          <p><span class="month">00</span>/<span class="year">00</span></p>
+        </div>
+      </div>
+
+      <div class="card_back">
+        <p class="card_back__cvc">000</p>
+      </div>
+    </section>
+
+
+    <section class="form_section">
+      <form class="form" action="">
+        <label class="form__label" for="cardholder">CARDHOLDER NAME</label>
+        <input class="form__input" type="text" name="cardholder" id="cardholder" placeholder="e.g. Jame Appleseed">
+        <div class="form__cardholder--error error"></div>
+
+
+        <label class="form__label" for="cardnumber">CARD NUMBER</label>
+        <input class="form__input" type="text" name="cardnumber" id="cardnumber" maxlength="19"
+          placeholder="e.g. 1234 5678 9123 0000">
+        <div class="form__inputnumber--error error"></div>
+
+
+        <div class="form__date_cvc">
+
+          <label class="form__label" for="month">EXP. DATE (MM/YY) </label>
+
+          <label class="form__label" for="cvc">CVC</label>
+
+          <div class="form__date">
+            <input class="form__input" type="text" maxlength="2" name="month" id="month" placeholder="MM">
+            <input class="form__input" type="text" maxlength="2" name="year" id="year" placeholder="YY">
+          </div>
+
+
+          <input class="form__input" type="text" maxlength="3" name="cvc" id="cvc" placeholder="e.g. 123">
+
+
+          <div class="form__errors">
+            <div class="form__input-mm--error error"></div>
+            <div class="form__input-yy--error error"></div>
+          </div>
+
+
+          <div class="form__input-cvc--error error"></div>
+        </div>
+        <input class="form__submit" type="submit" value="Confirm ">
+      </form>
+
+
+      <section class="thank">
+        <img class="thank__img" src="./img/icon-complete.svg" alt="complete icon">
+        <h1 class="thank__title">THANK YOU!</h1>
+        <p class="thank__text">We've added your card details</p>
+        <button class="thank__button">Continue</button>
+      </section>
+
+    </section>
+  </main>
+
+
+  <script src="./main.Js"></script>
+</body>
+
+</html>
